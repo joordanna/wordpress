@@ -1,0 +1,34 @@
+@use "sass:math" as math;
+
+// ------------------------------------
+// DEFINE LOCAL VARIABLES
+// ------------------------------------
+$_body-page-selector:                  '.woocommerce-checkout' !default;
+$_body-theme-selector:                 '.theme-shoptimizer' !default;
+
+
+
+
+
+// ------------------------------------
+// DEFINE CSS VARIABLES
+// ------------------------------------
+:root {
+	--fluidcheckout--field--height: #{ remsize( 4rem ) };
+	--fluidcheckout--field--border-radius: #{ remsize( .5rem ) };
+}
+
+
+
+
+
+// ------------------------------------
+// IMPORT STYLES
+// ------------------------------------
+@import
+	"z-index",
+	"checkout-place-order",
+	"woocommerce-form-fields",
+	"order-summary",
+	"order-summary--germanized",
+	"woocommerce-form-fields-select2";

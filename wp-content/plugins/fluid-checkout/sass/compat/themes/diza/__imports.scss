@@ -1,0 +1,32 @@
+// ------------------------------------
+// DEFINE LOCAL VARIABLES
+// ------------------------------------
+$_body-page-selector:                  '.woocommerce-checkout' !default;
+$_body-theme-selector:                 '.theme-diza' !default;
+
+
+
+
+
+// ------------------------------------
+// DEFINE CSS VARIABLES
+// ------------------------------------
+:root {
+	--fluidcheckout--field--height: #{ remsize( 4.2rem ) };
+	--fluidcheckout--field--border-radius: #{ remsize( .3rem ) };
+
+	--fluidcheckout--validation-check--horizontal-spacing--select-alt: #{ remsize( 3rem ) };
+}
+
+
+
+
+
+// ------------------------------------
+// IMPORT STYLES
+// ------------------------------------
+@import
+	"woocommerce-form-fields",
+	"checkout-payment-methods",
+	"checkout-validation",
+	"woocommerce-form-fields-select2";
